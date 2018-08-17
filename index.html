@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GISMo @ SLAC National Accelerator Laboratory</title>
+    <meta name="description" content="CMS Tutorial" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/animate.min.css" />
+    <link rel="stylesheet" href="/css/ionicons.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/glass.css" />
+    <link rel="preload" href="/assets/images/slac-gismolab1.jpg" as="image" />
+
+  </head>
+
+  <body>
+    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-collapse collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a>CMS Tutorial</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <div id="one" class="content shadow text-white container-fluid">
+</div>
+
+  <script type="text/javascript">
+
+    var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1iWDXxZvO-jPBwJohT4F3qh9sd1PZEYzuK03bGUuCK9Y/edit?usp=sharing';
+
+    function init() {
+      Tabletop.init( { key: public_spreadsheet_url,
+                       callback: showInfo,
+                       simpleSheet: true } );
+    }
+
+    window.addEventListener('DOMContentLoaded', init)
+
+    function showInfo(data) {
+      // data comes through as a simple array since simpleSheet is turned on
+
+      document.getElementById("one").innerHTML = '<h1 class="text-center">' + [data[0].object_names] + "</h1>";
+
+      var i;
+      for (i=0; i< data.length; i++){
+        document.getElementById("one").innerHTML += '<p class="text-center">' + [data[i].project_name] + "</p>" + '<img src="' + [data[i].project_images] + '">';
+      }
+
+
+    }
+  </script>
+
+<!--scripts loaded here -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.easing.min.js"></script>
+<script src="/js/wow.js"></script>
+<script src="/js/scripts.js"></script>
+
+
+<script type="text/javascript" src="../js/tabletop.js"></script>
+
+
+</body>
+</html>

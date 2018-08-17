@@ -1,0 +1,99 @@
+
+@import url(https://fonts.googleapis.com/css?family=Russo+One);
+
+
+.content:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+  background: url('/assets/images/slac-gismolab1.jpg') fixed no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: relative;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.content {
+  overflow: auto;
+  position: relative;
+}
+
+
+.white-text {
+  color:#fff;
+}
+
+.shadow   {
+  margin: 120px;
+  background: rgba(51, 51, 51, 0.7);
+  padding: 50px;
+  box-shadow: 0 0 5px gray;
+  border-radius: 10px;
+}
+
+
+.shadow_speaker   {
+  margin: 200px;
+  margin-top: 50px;
+  margin-bottom: 120px;
+  background: rgba(51, 51, 51, 0.7);
+  padding: 50px;
+  box-shadow: 0 0 5px gray;
+  border-radius: 10px;
+}
+
+
+h1 {
+  font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+
+@media(max-width:700px) {
+  .shadow{
+    margin: 5px;
+  }
+
+  .shadow_speaker{
+    margin-top:10px;
+    margin-bottom: 30px;
+    margin: 5px;
+  }
+
+}
+
+/* Responsive mobile font sizes */
+@media (max-width: 600px)
+{
+  h1{
+    font-size:9vw;
+  }
+
+  h2{
+    font-size:7.5vw;
+  }
+
+  h3{
+    font-size:6vw;
+  }
+
+  p{
+    font-size:4.8vw;
+  }
+}
+
+/* h5 {
+  font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+  margin: 0;
+  text-align: center;
+} */
