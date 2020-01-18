@@ -1,5 +1,5 @@
 # gismo website
-GisMo Team website using bootstrap
+GISMo Team website using js, html, bootstrap, jquery, ajax
 
 This was created on June 2018
 
